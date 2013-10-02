@@ -44,3 +44,92 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  background-color: #373737;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+  body form {
+    width: 450px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+    body form header {
+      height: 40px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      -webkit-border-top-left-radius: 3px;
+      -moz-border-top-left-radius: 3px;
+      border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-top-right-radius: 3px;
+      border-top-right-radius: 3px;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
+      background-image: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
+      /* For old Fx (3.6 to 15) */
+      background-image: -o-linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
+      /* For old Opera (11.1 to 12.0) */
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
+      /* Standard syntax; must be last */ }
+      body form header h1 {
+        margin: 12px;
+        position: absolute;
+        color: #323232;
+        text-shadow: 0px 1px 2px white; }
+    body form input {
+      width: 200px;
+      margin: 0px;
+      padding: 12px;
+      display: inline-block;
+      font-size: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: none; }
+      body form input.left-side {
+        float: left;
+        border-left: none; }
+      body form input.right-side {
+        width: 201px;
+        float: right;
+        border-left: none;
+        border-right: none; }
+      body form input.special-bottom {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+      body form input.header-input {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    body form h2 {
+      margin-left: 12px;
+      padding: 12px 0px;
+      clear: both;
+      color: #323232;
+      text-shadow: 0px 1px 2px white; }
+    body form label {
+      position: relative;
+      display: block;
+      clear: both; }
+      body form label select {
+        display: inline-block;
+        width: 100%;
+        padding: 12px;
+        margin: 0px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        outline: none;
+        /* remove focus ring from Webkit */
+        background-color: white;
+        -webkit-appearance: none;
+        /* remove the strong OSX influence from Webkit */ }
+      body form label:after {
+        height: 12px;
+        content: "<";
+        display: block;
+        position: absolute;
+        padding: 7px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 12px;
+        background-color: white;
+        color: #777777;
+        pointer-events: none; }
