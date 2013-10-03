@@ -149,10 +149,10 @@ $(document).ready(function(){
         
         provinceValue = $('#province').val();
         if (provinceValue) {
-            console.log(true);
+           // console.log(true);
         }
         else {
-            console.log(false);
+            //console.log(false);
         }
 	});
 });
