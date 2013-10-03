@@ -46,17 +46,20 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #373737;
+  background-color: #5a5a5a;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
   body form {
     width: 450px;
-    height: 500px;
+    height: 451px;
     margin: 100px auto;
     background-color: white;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }
     body form header {
       height: 40px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -98,6 +101,18 @@ body {
         border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
       body form input.header-input {
         border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      body form input.middle-glow {
+        color: orange;
+        outline: none; }
+        body form input.middle-glow:focus {
+          box-shadow: inset 0 0 5px orange; }
+      body form input::-moz-placeholder {
+        color: #6e6e6e; }
+      body form input.email-glow {
+        color: #646464;
+        outline: none; }
+        body form input.email-glow:focus {
+          box-shadow: inset 0 0 5px #646464; }
     body form h2 {
       margin-left: 12px;
       padding: 12px 0px;
@@ -114,6 +129,8 @@ body {
         padding: 12px;
         margin: 0px;
         border: none;
+        font-size: 12px;
+        color: #a5a5a5;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         outline: none;
         /* remove focus ring from Webkit */
@@ -121,15 +138,44 @@ body {
         -webkit-appearance: none;
         /* remove the strong OSX influence from Webkit */ }
       body form label:after {
-        height: 12px;
+        height: 23px;
         content: "<";
         display: block;
         position: absolute;
-        padding: 7px;
+        padding: 9px;
         top: 0;
-        right: 0;
+        right: 10px;
         bottom: 0;
         font-size: 12px;
         background-color: white;
-        color: #777777;
-        pointer-events: none; }
+        color: #a5a5a5;
+        font-weight: bold;
+        pointer-events: none;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -o-transform: rotate(270deg); }
+    body form button {
+      margin: 25px auto;
+      padding: 10px 15px;
+      display: block;
+      border: none;
+      font-size: 14px;
+      color: white;
+      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+      border-radius: 3px;
+      cursor: pointer;
+      background-image: linear-gradient(to top, #165a99, #2f93f0);
+      background-image: -moz-linear-gradient(to top, #165a99, #2f93f0);
+      /* For old Fx (3.6 to 15) */
+      background-image: -o-linear-gradient(to top, #165a99, #2f93f0);
+      /* For old Opera (11.1 to 12.0) */
+      background-image: linear-gradient(to top, #165a99, #2f93f0);
+      /* Standard syntax; must be last */
+      -webkit-box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3); }
+      body form button:active {
+        -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+        color: rgba(255, 255, 255, 0.9); }

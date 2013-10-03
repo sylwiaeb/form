@@ -1,15 +1,18 @@
 body {
-	background-color: rgb(55, 55, 55);
+	background-color: rgb(90, 90, 90);
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	form {
 		width: 450px;
-		height: 500px;
+		height: 451px;
 		margin: 100px auto;
 		background-color: white;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
+		-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 		header {
 			height: 40px;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -57,6 +60,23 @@ body {
 			&.header-input {
 				border-top: 1px solid rgba(0, 0, 0, 0.1);
 			}
+			&.middle-glow {
+				color: orange;
+				outline: none;
+				&:focus {
+					box-shadow: inset 0 0 5px orange;
+				}
+			}
+			&::-moz-placeholder {
+			      color: rgb(110, 110, 110);
+			}
+			&.email-glow {
+				color: rgb(100, 100, 100);
+				outline: none;
+				&:focus {
+					box-shadow: inset 0 0 5px rgb(100, 100, 100);
+				}
+			}
 		}
 		h2 {
 			margin-left: 12px;
@@ -75,27 +95,59 @@ body {
 			    padding: 12px;
 			    margin: 0px;
 			    border: none;
+				font-size: 12px;
+				color: rgb(165, 165, 165);
 				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 				outline: none; /* remove focus ring from Webkit */
 			    background-color: white;
 			    -webkit-appearance: none; /* remove the strong OSX influence from Webkit */
 			}
 			&:after {
-				height: 12px;
+				height: 23px;
 				content: "<";
 				display: block;
 				position: absolute;
-				padding: 7px;
+				padding: 9px;
 				top: 0;
-				right: 0;
+				right: 10px;
 				bottom: 0;
 				font-size: 12px;
 				background-color: white;
-				color: rgb(119, 119, 119);
+				color: rgb(165, 165, 165);
+				font-weight: bold;
 				pointer-events:none;
+				-webkit-transform: rotate(270deg);
+				-moz-transform: rotate(270deg);
+				-o-transform: rotate(270deg);
 			}
 				
-			
+		}
+		button {
+			margin: 25px auto;
+			padding: 10px 15px;
+			display: block;
+			border: none;
+			font-size: 14px;
+			color: white;
+			text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+			border-radius: 3px;
+			cursor: pointer;
+			background-image: linear-gradient(to top, rgb(22, 90, 153), rgb(47, 147, 240));
+			background-image:    -moz-linear-gradient(to top, rgb(22, 90, 153), rgb(47, 147, 240)); /* For old Fx (3.6 to 15) */
+			background-image:      -o-linear-gradient(to top, rgb(22, 90, 153), rgb(47, 147, 240)); /* For old Opera (11.1 to 12.0) */ 
+			background-image:         linear-gradient(to top, rgb(22, 90, 153), rgb(47, 147, 240)); /* Standard syntax; must be last */
+			-webkit-box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3);
+			box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.3);
+			&:active {
+				-webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+				box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+				color: rgba(255, 255, 255, 0.9);
+			}
+			&:focus {
+				
+			}
 		}
 	}
 }
