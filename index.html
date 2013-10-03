@@ -3,27 +3,26 @@
 <head>
     <title></title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
 	<form>
 		<header>
 			<h1>Sign Up - It's free.</h1>
 		</header>
-		<input class="left-side" type="text" placeholder="Nick">
-		<input class="right-side" type="text" placeholder="Password">
-		<input class="left-side special-bottom email-glow" type="text" placeholder="Email">
-		<input class="right-side special-bottom" type="text" placeholder="Re-confirm email">
+		<input id="nick" class="left-side" type="text" placeholder="Nick">
+		<input id="password" class="right-side" type="password" placeholder="Password">
+		<input id="email" class="left-side special-bottom email-glow" type="text" placeholder="Email">
+		<input id="re-email" class="right-side special-bottom" type="text" placeholder="Re-confirm email">
 		
 		<h2>Personal Details</h2>
 	
-		<input class="header-input middle-glow left-side" type="text" placeholder="First Name">
-		<input class="header-input middle-glow right-side" type="text" placeholder="Last Name">
-		<input class="middle-glow left-side" type="text" placeholder="Your Email">
-		<input class="middle-glow right-side" type="text" placeholder="Re-enter Name">
-		<input class="middle-glow left-side" type="text" placeholder="Adress 1">
-		<input class="middle-glow right-side" type="text" placeholder="Adress 2">
-		<input class="middle-glow left-side" type="text" placeholder="City">
-		<input class="middle-glow right-side" type="text" placeholder="Province">
+		<input id="first-name" class="header-input middle-inputs-glow left-side" type="text" placeholder="First Name">
+		<input id="last-name" class="header-input middle-inputs-glow right-side" type="text" placeholder="Last Name">
+		<input id="first-adress" class="middle-inputs-glow left-side" type="text" placeholder="Adress 1">
+		<input id="second-adress" class="middle-inputs-glow right-side" type="text" placeholder="Adress 2">
+		<input id="city" class="middle-inputs-glow left-side" type="text" placeholder="City">
+		<input id="province" class="middle-inputs-glow right-side" type="text" placeholder="Province">
 		
 		<label>
 			<select>
@@ -34,7 +33,10 @@
 			</select>
 		</label>
 		
-		<button>Sign Up</button>
+		<button id="button">Sign Up</button>
 	</form>
+	
+	<script src="vendor/jquery-1.9.0.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
