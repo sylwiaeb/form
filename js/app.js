@@ -42,27 +42,27 @@ $(document).ready(function(){
 		nickValue = $('#nick').val().length;
 		if (nickValue) {
 			if (nickValue < 3) {
-				//console.log(false);
+                $('#nick + span').addClass('icon-cancel');
 			}
             else {
-				$('#nick').addClass('nick-check-true');
+				 $('#nick + span').addClass('icon-ok');
 			}
 		}
         else {
-			//console.log(false);
+			$('#nick + span').addClass('icon-cancel');
 		}
         
         passwordValue = $('#password').val().length;
         if (passwordValue) {
             if (passwordValue < 5) {
-                //console.log(false);
+                $('#password + span').addClass('icon-cancel');
             }
             else {
-                //console.log(true);
+                $('#password + span').addClass('icon-ok');
             }
         }
         else {
-            //console.log(false);
+            $('#password + span').addClass('icon-cancel');
         }
         
         emailValue = $('#email').val();
@@ -70,43 +70,43 @@ $(document).ready(function(){
             reValue = re.test(emailValue);
             
             if (reValue) {
-                //console.log(true);
+                $('#email + span').addClass('icon-ok');
             }
             else {
-                //console.log(false);
+                $('#email + span').addClass('icon-cancel');
             }
         }
         else {
-            //console.log(false);
+            $('#email + span').addClass('icon-cancel');
         }
         
         reEmailValue = $('#re-email').val();
         if (reEmailValue) {
             if (emailValue === reEmailValue) {
-                //console.log(true);
+                $('#re-email + span').addClass('icon-ok');
             }
             else {
-                //console.log(false);
+                $('#re-email + span').addClass('icon-cancel');
             }
         }
         else {
-            //console.log(false);
+            $('#re-email + span').addClass('icon-cancel');
         }
         
         firstNameValue = $('#first-name').val().length;
         if (firstNameValue) {
-            //console.log(true);
+           $('#first-name + span').addClass('icon-ok');
         } 
         else {
-            //console.log(false);
+            $('#first-name + span').addClass('icon-cancel');
         }
         
         lastNameValue = $('#last-name').val().length;
         if (lastNameValue) {
-            //console.log(true);
+            $('#last-name + span').addClass('icon-ok');
         } 
         else {
-            //console.log(false);
+            $('#last-name + span').addClass('icon-cancel');
         }
         
         firstAdressValue = $('#first-adress').val();
@@ -114,14 +114,14 @@ $(document).ready(function(){
             checkFirstAdressValue = reAdress.test(firstAdressValue);
             
             if (checkFirstAdressValue) {
-                //console.log(true);
+                $('#first-adress + span').addClass('icon-ok');
             }
             else {
-                //console.log(false);
+                $('#first-adress + span').addClass('icon-cancel');
             }
         }
         else {
-            //console.log(false);
+            $('#first-adress + span').addClass('icon-cancel');
         }
         
         secondAdressValue = $('#second-adress').val();
@@ -129,30 +129,30 @@ $(document).ready(function(){
             checkSecondAdressValue = reAdress.test(secondAdressValue);
             
             if (checkSecondAdressValue) {
-                //console.log(true);
+                $('#second-adress + span').addClass('icon-ok');
             }
             else {
-                //console.log(false);
+                $('#second-adress + span').addClass('icon-cancel');
             }
         }
         else {
-            //console.log(false);
+            $('#second-adress + span').addClass('icon-cancel');
         }
         
         cityValue = $('#city').val();
         if (cityValue) {
-            //console.log(true);
+            $('#city + span').addClass('icon-ok');
         }
         else {
-            //console.log(false);
+            $('#city + span').addClass('icon-cancel');
         }
         
         provinceValue = $('#province').val();
         if (provinceValue) {
-           // console.log(true);
+            $('#province + span').addClass('icon-ok');
         }
         else {
-            //console.log(false);
+            $('#province + span').addClass('icon-cancel');
         }
 	});
 });

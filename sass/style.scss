@@ -1,4 +1,9 @@
 $dark: rgb(50, 50, 50);
+$white: rgb(255, 255, 255);
+$text-grey: rgb(165, 165, 165);
+$text-shadow-white: rgb(255, 255, 255);
+$text-shadow-black: rgba(0, 0, 0, 0.6);
+$border-grey: rgba(0, 0, 0, 0.1);
 
 @import "reset";
 @import "form";
