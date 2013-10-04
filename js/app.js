@@ -1,8 +1,3 @@
-/**
- * Created with JetBrains WebStorm.
- * User: sylwia
- * Date: 8/26/13
- */
 $(document).ready(function(){
 	var nickValue;
 	var nick = $('#nick');
@@ -39,30 +34,30 @@ $(document).ready(function(){
         var checkSecondAdressValue;
 		e.preventDefault();
 		
-		nickValue = $('#nick').val().length;
+		nickValue = nick.val().length;
 		if (nickValue) {
 			if (nickValue < 3) {
-                $('#nick + span').addClass('icon-cancel');
+                $('#nick + span').addClass('icon-error');
 			}
             else {
 				 $('#nick + span').addClass('icon-ok');
 			}
 		}
         else {
-			$('#nick + span').addClass('icon-cancel');
+			$('#nick + span').addClass('icon-error');
 		}
         
         passwordValue = $('#password').val().length;
         if (passwordValue) {
             if (passwordValue < 5) {
-                $('#password + span').addClass('icon-cancel');
+                $('#password + span').addClass('icon-error');
             }
             else {
                 $('#password + span').addClass('icon-ok');
             }
         }
         else {
-            $('#password + span').addClass('icon-cancel');
+            $('#password + span').addClass('icon-error');
         }
         
         emailValue = $('#email').val();
@@ -73,11 +68,11 @@ $(document).ready(function(){
                 $('#email + span').addClass('icon-ok');
             }
             else {
-                $('#email + span').addClass('icon-cancel');
+                $('#email + span').addClass('icon-error');
             }
         }
         else {
-            $('#email + span').addClass('icon-cancel');
+            $('#email + span').addClass('icon-error');
         }
         
         reEmailValue = $('#re-email').val();
@@ -86,11 +81,11 @@ $(document).ready(function(){
                 $('#re-email + span').addClass('icon-ok');
             }
             else {
-                $('#re-email + span').addClass('icon-cancel');
+                $('#re-email + span').addClass('icon-error');
             }
         }
         else {
-            $('#re-email + span').addClass('icon-cancel');
+            $('#re-email + span').addClass('icon-error');
         }
         
         firstNameValue = $('#first-name').val().length;
@@ -98,7 +93,7 @@ $(document).ready(function(){
            $('#first-name + span').addClass('icon-ok');
         } 
         else {
-            $('#first-name + span').addClass('icon-cancel');
+            $('#first-name + span').addClass('icon-error');
         }
         
         lastNameValue = $('#last-name').val().length;
@@ -106,7 +101,7 @@ $(document).ready(function(){
             $('#last-name + span').addClass('icon-ok');
         } 
         else {
-            $('#last-name + span').addClass('icon-cancel');
+            $('#last-name + span').addClass('icon-error');
         }
         
         firstAdressValue = $('#first-adress').val();
@@ -117,11 +112,11 @@ $(document).ready(function(){
                 $('#first-adress + span').addClass('icon-ok');
             }
             else {
-                $('#first-adress + span').addClass('icon-cancel');
+                $('#first-adress + span').addClass('icon-error');
             }
         }
         else {
-            $('#first-adress + span').addClass('icon-cancel');
+            $('#first-adress + span').addClass('icon-error');
         }
         
         secondAdressValue = $('#second-adress').val();
@@ -132,11 +127,11 @@ $(document).ready(function(){
                 $('#second-adress + span').addClass('icon-ok');
             }
             else {
-                $('#second-adress + span').addClass('icon-cancel');
+                $('#second-adress + span').addClass('icon-error');
             }
         }
         else {
-            $('#second-adress + span').addClass('icon-cancel');
+            $('#second-adress + span').addClass('icon-error');
         }
         
         cityValue = $('#city').val();
@@ -144,7 +139,7 @@ $(document).ready(function(){
             $('#city + span').addClass('icon-ok');
         }
         else {
-            $('#city + span').addClass('icon-cancel');
+            $('#city + span').addClass('icon-error');
         }
         
         provinceValue = $('#province').val();
@@ -152,7 +147,7 @@ $(document).ready(function(){
             $('#province + span').addClass('icon-ok');
         }
         else {
-            $('#province + span').addClass('icon-cancel');
+            $('#province + span').addClass('icon-error');
         }
 	});
 });

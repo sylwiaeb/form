@@ -7,36 +7,78 @@
 </head>
 <body>
 	<form>
-		<header>
+		<header class="top-header">
 			<h1>Sign Up - It's free.</h1>
 		</header>
-		
-		<label class="one"><input id="nick" class="header-inputs-glow left-side" type="text" placeholder="Nick"><span class="icon-area"></span></label>
-		<label class="two"><input id="password" class="header-inputs-glow right-side" type="password" placeholder="Password"><span class="icon-area"></span></label>
-		<label class="one"><input id="email" class="header-inputs-glow left-side special-bottom" type="text" placeholder="Email"><span class="icon-area"></span></label>
-		<label class="two"><input id="re-email" class="header-inputs-glow right-side special-bottom" type="text" placeholder="Re-confirm email"><span class="icon-area"></span></label>
-		
-		<h2>Personal Details</h2>
-	
-	   <label class="one"><input id="first-name" class="middle-header-input middle-inputs-glow left-side" type="text" placeholder="First Name"><span class="icon-area"></span></label>
-	   <label class="two"><input id="last-name" class="middle-header-input middle-inputs-glow right-side" type="text" placeholder="Last Name"><span class="icon-area"></span></label>
-	   <label class="one"><input id="first-adress" class="middle-inputs-glow left-side" type="text" placeholder="Adress 1"><span class="icon-area"></span></label>
-	   <label class="two"><input id="second-adress" class="middle-inputs-glow right-side" type="text" placeholder="Adress 2"><span class="icon-area"></span></label>
-	   <label class="one"> <input id="city" class="middle-inputs-glow left-side" type="text" placeholder="City"><span class="icon-area"></span></label>
-	   <label class="two"> <input id="province" class="middle-inputs-glow right-side" type="text" placeholder="Province"><span class="icon-area"></span></label>
-		
-		<label id="select-arrow">
+
+		<label>
+            <input id="nick" type="text" placeholder="Nick">
+            <span class="icon"></span>
+        </label>
+
+		<label>
+            <input id="password" type="password" placeholder="Password">
+            <span class="icon"></span>
+        </label>
+
+		<label>
+            <input id="email" type="text" placeholder="Email">
+            <span class="icon"></span>
+        </label>
+
+		<label>
+            <input id="re-email" type="text" placeholder="Re-confirm email">
+            <span class="icon"></span>
+        </label>
+
+        <header class="middle-header">
+            <h2>Personal Details</h2>
+        </header>
+
+	   <label>
+           <input id="first-name" type="text" placeholder="First Name">
+           <span class="icon"></span>
+       </label>
+
+	   <label>
+           <input id="last-name" type="text" placeholder="Last Name">
+           <span class="icon"></span>
+       </label>
+
+	   <label>
+           <input id="first-adress" type="text" placeholder="Adress 1">
+           <span class="icon"></span>
+       </label>
+
+	   <label>
+           <input id="second-adress" type="text" placeholder="Adress 2">
+           <span class="icon"></span>
+       </label>
+
+	   <label>
+           <input id="city" type="text" placeholder="City">
+           <span class="icon"></span>
+       </label>
+
+	   <label>
+           <input id="province" type="text" placeholder="Province">
+           <span class="icon"></span>
+       </label>
+
+		<label class="select">
+            <span class="arrow"></span>
 			<select>
 				<option disabled selected>Country</option>
 				<option>Poland</option>
 				<option>Germany</option>
 				<option>USA</option>
 			</select>
+
 		</label>
-		
+
 		<button id="button">Sign Up</button>
 	</form>
-	
+
 	<script src="vendor/jquery-1.9.0.js"></script>
 	<script src="js/app.js"></script>
 </body>
